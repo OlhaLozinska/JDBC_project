@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class ConsoleInput {
 
-    private static Scanner scanner = new Scanner(System.in);
-
     public static String enterString() {
-        return scanner.next();
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
     }
 
     public static int enterInt() {
+        Scanner scanner = new Scanner(System.in);
         int i = 0;
         try {
             i = scanner.nextInt();
